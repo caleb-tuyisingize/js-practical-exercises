@@ -1,0 +1,18 @@
+<body>
+    
+
+    <h1>
+        
+    </h1>
+</body>
+<script>
+    document.body.addEventListener('click',
+    function changeToImage(){
+        const par = document.getElementsByTagName("h1")[0];
+        const img = document.createElement("img");
+        img.src="https://thecatapi.com/api/images/get?format=src&type=gif";
+        par.appendChild(img);
+        img.style.marginLeft = "160px";
+    }
+);
+</script>
