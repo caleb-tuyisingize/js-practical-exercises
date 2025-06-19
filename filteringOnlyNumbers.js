@@ -11,3 +11,7 @@
 
 var joke = "Why couldn't the shoes go out and play? \nThey were all \"tied\" up!";
 console.log(joke);
+
+
+var haiku = "Blowing from the west\n"+"Fallen leaves gather\n"+"In the east."
+console.log(haiku);
