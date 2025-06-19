@@ -31,9 +31,37 @@
 // var madLib="The Intro to JavaScript course is "+adjective1+". James and Julia are so "+adjective2+". I cannot wait to work through the rest of this "+adjective3+" content!";
 // console.log(madLib);
 
- var firstName="Julia";
- var interest="cats";
- var hobby="play video games";
+//  var firstName="Julia";
+//  var interest="cats";
+//  var hobby="play video games";
  
- var awesomeMessage="Hi, my name is "+firstName+". I love "+interest+". In my spare time, I like to "+hobby+"."
- console.log(awesomeMessage);
+//  var awesomeMessage="Hi, my name is "+firstName+". I love "+interest+". In my spare time, I like to "+hobby+"."
+//  console.log(awesomeMessage);
+
+// var number = 4;
+
+// if (0=== number % 2) {
+//     console.log("even");
+    
+// } else if(0!== number % 2){
+//     console.log("odd");
+// }else{
+//     console.log("NaN");
+// }
+
+var musicians = 1;
+
+if(musicians <= 0){
+    console.log("not a group");
+}else if(musicians == 1){
+    console.log("solo");
+}else if(musicians == 2){
+    console.log("duet");
+}else if(musicians == 3){
+    console.log("trio");
+}else if(musicians == 4){
+    console.log("quartet");
+}else if(musicians > 4){
+    console.log("this is a large group");
+}
+
