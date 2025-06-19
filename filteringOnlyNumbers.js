@@ -80,22 +80,57 @@
  */
  
 // Change these to test different scenarios:
-let balance = 325.00;
-let isActive = true;
-let checkBalance = true;
+// let balance = 325.00;
+// let isActive = true;
+// let checkBalance = true;
 
-if (checkBalance) {
-  if (isActive && balance > 0) {
-    console.log("Your balance is $" + balance.toFixed(2) + ".");
-  } else if (!isActive) {
-    console.log("Your account is no longer active.");
-  } else if (isActive && balance === 0) {
-    console.log("Your account is empty.");
-  } else if (isActive && balance < 0) {
-    console.log("Your balance is negative. Please contact bank.");
-  }
-} else {
-  console.log("Thank you. Have a nice day!");
+// if (checkBalance) {
+//   if (isActive && balance > 0) {
+//     console.log("Your balance is $" + balance.toFixed(2) + ".");
+//   } else if (!isActive) {
+//     console.log("Your account is no longer active.");
+//   } else if (isActive && balance === 0) {
+//     console.log("Your account is empty.");
+//   } else if (isActive && balance < 0) {
+//     console.log("Your balance is negative. Please contact bank.");
+//   }
+// } else {
+//   console.log("Thank you. Have a nice day!");
+// }
+
+/*
+ * QUIZ REQUIREMENTS
+ * 1. Your code should have the variables `flavor`, `vessel`, and `toppings`
+ * 2. Your code should have an `if` statement
+ * 3. Your code should use logical expressions
+ * 4. Your code should work with 
+ *  - `flavor=vanilla`, `vessel=cone`, and `toppings=sprinkles`
+ *  - `flavor=vanilla`, `vessel=cone`, and `toppings=peanuts`
+ *  - `flavor=vanilla`, `vessel=bowl`, and `toppings=sprinkles`
+ *  - `flavor=vanilla`, `vessel=bowl`, and `toppings=peanuts`
+ * 
+ *  - `flavor=chocolate`, `vessel=cone`, and `toppings=sprinkles`
+ *  - `flavor=chocolate`, `vessel=cone`, and `toppings=peanuts`
+ *  - `flavor=chocolate`, `vessel=bowl`, and `toppings=sprinkles`
+ *  - `flavor=chocolate`, `vessel=bowl`, and `toppings=peanuts`
+ *   
+ * 5. Your code should NOT log (print) anything when 
+ *  - the flavor is something other than "vanilla" or "chocolate"
+ *  - the vessel is something other than "cone" or "bowl"
+ *  - the toppings is something other than "sprinkles" or "peanuts"
+ * 
+ * 6. Your code should not be empty
+ */
+ var flavor = "strawberry";
+var vessel = "cone";
+var toppings = "cookies";
+
+
+if(
+    (flavor === "vanilla" || flavor === "chocolate")&&
+    (vessel === "cone" || vessel === "bowl")&&
+    (toppings === "sprinkles" || toppings === "peanuts")
+){
+    console.log(`I'd like two scoops of ${flavor} ice cream in a ${vessel} with ${toppings}.`);
 }
-
 
