@@ -9,9 +9,19 @@
 // console.log("The file located at \"C:\\\\Desktop\\My Documents\\Roster\\names.txt\" contains the names on the roster.");
 // console.log("Green">"green");
 
-var joke = "Why couldn't the shoes go out and play? \nThey were all \"tied\" up!";
-console.log(joke);
+// var joke = "Why couldn't the shoes go out and play? \nThey were all \"tied\" up!";
+// console.log(joke);
 
 
-var haiku = "Blowing from the west\n"+"Fallen leaves gather\n"+"In the east."
-console.log(haiku);
+// var haiku = "Blowing from the west\n"+"Fallen leaves gather\n"+"In the east."
+// console.log(haiku);
+
+// console.log(3 === 3);
+// var thingOne = "red"; var thingTwo = "blue";
+
+// console.log(thingOne +" "+ thingTwo);
+
+var bill=10.25 + 3.99 + 7.15;
+var tip = 0.15*bill;
+total = bill+tip;
+console.log(total.toFixed(1) + "$");
