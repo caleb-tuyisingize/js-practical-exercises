@@ -22,8 +22,8 @@
  */
  
 // change the values of `eatsPlants` and `eatsAnimals` to test your code
-var eatsPlants = false;
-var eatsAnimals = true;
+var eatsPlants = true;
+var eatsAnimals = false;
 
 /*
  * Test your code agaist the followig possible input/output combinations of (`eatsPlants`, `eatsAnimals`, expected output):
@@ -33,6 +33,6 @@ var eatsAnimals = true;
  * - (false, false, undefined)
  */
 
-var category = eatsPlants ? (eatsAnimals? "omnivore" : "herbivore") : (eatsAnimals ?"carnivore":undefined);
+var category = eatsPlants ? (eatsAnimals? "omnivore" : "herbivore") : (eatsAnimals ?"carnivore":"undefined");
 
 console.log(category);
