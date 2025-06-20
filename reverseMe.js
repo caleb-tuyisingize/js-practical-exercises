@@ -6,4 +6,4 @@ const reverseMe = (name)=>{
     return names;
 
 }
-console.log(reverseMe("Karebu"));
+console.log("Hello "+reverseMe("Karebu")+" My name is "+reverseMe("Merci")+" am a Student in the "+reverseMe("GYM"));
