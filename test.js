@@ -39,7 +39,8 @@
 // }
 // console.log(validateEmail("calebEmail@gmeil.rw"));
 
-
+// About Constructors
+/*
 function Helper(kind,type,location){
  this.kind = kind;
  this.type = type;
@@ -54,3 +55,30 @@ const help2 = new Helper("Phone","System","Tumba");
 help1.seekHelp();
 
 help2.seekHelp();
+*/
+
+// So new way by using contents literal
+const poem = `Roses are red,
+Violets are blue,
+JavaScript is awesome,
+And so are you!`;
+
+// Old way of multi-lines string
+/*const poem = "Roses are red\,"+
+"Violets are blue\,"+
+"JavaScript is awesome\,"+
+"And so are you!";
+ */
+
+console.log(poem);
+
+
+let numbers = 122344456777890000;
+
+const newNumbers = numbers.toString().match(/(\d)\1*|0+/g);
+
+const filtered = newNumbers.map((a) => a.length%2!==0 ? a :'')
+.filter((a,b) => newNumbers.indexOf(a) === b)
+.map(nums => nums.split("").filter((a,b) => nums.indexOf(a) === b).join(""))
+.join("");
+console.log(filtered);
