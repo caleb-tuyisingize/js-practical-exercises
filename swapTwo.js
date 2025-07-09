@@ -19,7 +19,7 @@ But without the tmp !
 
 :-)*/
 
-const swap = ary => {
+swap = ary => {
   ary[0] = ary[0] + ary[1];
   ary[1] = ary[0] - ary[1];
   ary[0] = ary[0] - ary[1];
