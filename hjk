@@ -1,0 +1,16 @@
+const basic = document.querySelector("head");
+const styles = document.createElement("style");
+styles.textContent = `
+*{
+background-color: black;
+color: aliceblue;
+}
+body{
+background-color: black;
+color: aliceblue;
+}
+a{
+color:white;
+}
+`;
+basic.appendChild(styles);
