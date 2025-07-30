@@ -1,5 +1,6 @@
 function ipsBetween(start, end){
-  const ipConverter = (ip)=> ip.split(".").reduce((num , conv) => num * 256 + +conv,0);
+  const ipConverter = (ip)=> ip.split(".").map(x=> parseInt(x)).reduce((num , conv) => num * 256+conv);
+//   const ipConverter = (ip)=> ip.split(".").reduce((num , conv) => num * 256 + +conv,0);
   return ipConverter(end) - ipConverter(start);
 }
  console.log(ipsBetween("150.0.0.0", "150.0.0.1"));
