@@ -1,3 +1,4 @@
+/*
 function wave(str){
     const checker = str.split(" ");
     const newString = [];
@@ -19,4 +20,18 @@ function wave(str){
     }
  
 }
+*/
+
+function wave(str){
+    const newString = [];
+    const rep = str.includes(" ") ? str.replace(/[\s]/g,"") : str;
+    let lengthOfWord = rep.length;
+    for(let i = 0; i < lengthOfWord; i++){
+        let strings = rep.split("").map((e,index)=> index === i ? e.toUpperCase() : e);
+            newString.push(strings.join(""));
+        }
+     return newString;
+ 
+}
+
 console.log(wave('two words'));
