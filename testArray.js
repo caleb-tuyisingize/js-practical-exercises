@@ -5,4 +5,5 @@ const obj = {
     location: "Nyamirambo"
 }
 
-console.log(Object.getOwnPropertyNames(obj));
+// console.log(Object.getOwnPropertyNames(obj));
+console.log(Object.getOwnPropertyDescriptor(obj));
