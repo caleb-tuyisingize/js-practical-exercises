@@ -1,30 +1,30 @@
-/*
+
 function solution(array) {
   var missing = 0, duplicate = 0;
-  const missed = [];
-  const as = [];
-  const missingo = [];
-  const monkey = array.filter((a,b)=> array.indexOf(a) === b? a:missed.push(a));
+  const duplicated = []; //DUPLICATES
+  const missed = []; // MISSING
+  const missingo = []; // ALL NUMBERS EXPECTED 1- FINAL
+  const monkey = array.filter((a,b)=> array.indexOf(a) === b? a:duplicated.push(a)); //DUP
   for(let i=1; i <= array.length; i++){
     missingo.push(i);
   }
-const checking = missingo.map(a=> array.includes(a) ? "" : as.push(a));
-return [duplicate+as[0], missing+missed[0]];
+const checking = missingo.map(a=> array.includes(a) ? "" : missed.push(a)); //FOR GETTING THE NUMBER MISSING
+return [duplicate+missed[0], missing+duplicated[0]];
 
 }
-*/
+
 
 function solution(array) {
   let missing = 0, duplicate = 0;
-  const missed = []; // store duplicates
-  const as = [];     // store missing numbers
+  const duplicated = []; // store duplicates
+  const missed = [];     // store missing numbers
   const missingo = [];
 
   // Find duplicates efficiently
   const seen = new Set();
   for (let num of array) {
     if (seen.has(num)) {
-      missed.push(num); // duplicate found
+      duplicated.push(num); // duplicate found
     } else {
       seen.add(num);
     }
@@ -38,12 +38,12 @@ function solution(array) {
   // Find missing numbers efficiently
   for (let num of missingo) {
     if (!seen.has(num)) {
-      as.push(num);
+      missed.push(num);
     }
   }
 
-  duplicate = as[0];
-  missing = missed[0];
+  duplicate = missed[0];
+  missing = duplicated[0];
 
   return [duplicate, missing];
 }
