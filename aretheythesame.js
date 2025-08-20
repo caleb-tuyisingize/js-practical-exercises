@@ -10,8 +10,8 @@ function sameCase(a, b){
 
 }
 
-console.log(sameCase('a', 'g')); // 1
-console.log(sameCase('A', 'C')); // 1
-console.log(sameCase('b', 'G')); // 0
-console.log(sameCase('B', 'g')); // 0
+console.log(sameCase('a', 'g'));
+console.log(sameCase('A', 'C'));
+console.log(sameCase('b', 'G'));
+console.log(sameCase('B', 'g'));
 console.log(sameCase('0', '?')); 
