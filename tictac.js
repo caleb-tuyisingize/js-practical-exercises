@@ -7,4 +7,4 @@ function solveTTT(board) {
     return "Invalid";
 }
 }
-console.log(solveTTT(['', '', '', 'O', '', '', 'X', '', '']));
+console.log(solveTTT(['', '', '', 'O', '', '', 'X', '']));
