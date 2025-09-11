@@ -18,6 +18,8 @@ class Mevis{
 
 const mevis = new Mevis("Caleb", 23);
 const docite = new Mevis("Docite", 23);
+const elyse = new Mevis("Docite", 19);
 
 const user1 = Mevis.mevis;
 const user2 = Mevis.docite;
+const user3 = Mevis.elyse;
