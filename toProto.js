@@ -2,7 +2,9 @@ class Mevis{
     constructor(name, age){
         this.name = name;
         this.age = age;
-        console.log(`Hello ${this.name} you are ${this.age} years old and you can't continue sorry for that `);
+        console.log(`Hello ${this.name} you are ${this.age} years old and you can't continue sorry for that 
+            and this age can be whole
+            `);
     }
     
 }
