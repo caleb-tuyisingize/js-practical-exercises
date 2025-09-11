@@ -2,9 +2,16 @@ class Mevis{
     constructor(name, age){
         this.name = name;
         this.age = age;
-        console.log(`Hello ${this.name} you are ${this.age} years old and you can't continue sorry for that 
-            and this age can be whole
-            `);
+        if(this.age > 20){
+
+            console.log(`Hello ${this.name} you are ${this.age} years old and you can't continue sorry for that 
+                and this age can be whole
+                `);
+                }else{
+                   console.log(`Hello ${this.name} you are ${this.age} years old and you can continue sorry for that 
+                and this age can be whole
+                `);   
+                }
     }
     
 }
