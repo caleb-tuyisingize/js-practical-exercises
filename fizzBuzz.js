@@ -6,7 +6,7 @@ while (x <=20) {
     if(x % 3 === 0 &&  x % 5 === 0){
         console.log("JuliaJames");
     }else if(x % 3 === 0){
-    console.log("Julia\n");//, James, or JuliaJames
+    console.log("Julia\n");//, James, or JuliaJames body on soul
         
     }else if(x % 5 ===0){
         console.log("James");
