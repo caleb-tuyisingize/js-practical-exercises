@@ -20,7 +20,7 @@ let count = 60;
 
 while(count >= 0){
      if(count === 50){
-        console.log(`Orbiter transfers from ground to internal power\n`);
+        console.log(`Orbiter only transfers from ground to internal power\n`);
     }else if(count === 31){
         console.log(`Ground launch sequencer is go for auto sequence start\n`);
         

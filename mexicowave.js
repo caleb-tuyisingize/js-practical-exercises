@@ -49,4 +49,4 @@ function wave(str){
      return newString;
  
 }
-console.log(wave('two words'));
+console.log(wave('two  words'));
