@@ -14,7 +14,7 @@
 // don't change this code
 // emotions() function definition
 function emotions(myString, myFunc) {
-    console.log("I am " + myString + ", " + myFunc(2));
+    console.log("I am and I would like this " + myString + ", " + myFunc(2));
 }
 
 emotions("happy", function(){
