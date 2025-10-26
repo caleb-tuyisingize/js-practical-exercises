@@ -127,7 +127,7 @@ var toppings = "cookies";
 
 
 if(
-    (flavor === "vanilla" || flavor === "chocolate")&&
+    (flavor === "vanill" || flavor === "chocolate")&&
     (vessel === "cone" || vessel === "bowl")&&
     (toppings === "sprinkles" || toppings === "peanuts")
 ){
